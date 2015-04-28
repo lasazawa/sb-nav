@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Your Website</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+
+
+
+		<nav id="nav-signed-out" class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed hidden-xs" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		      	<div class="logo-container signed-out">
+		      		<img src="images/logo.svg">
+		      	</div>
+		      </a>
+
+		      <ul class="nav navbar-nav navbar-right visible-xs right" style="margin: 0 15px;">
+			    	<li class="sign-in mobile-sign-in" style="display:table-cell;">
+		        	<a class="nav-btn" href="#">Sign In</a>
+		        </li>
+		        <li class="mobile-join" style="display:table-cell;">
+		        	<a class="btn btn-join uppercase">Join</a>
+		        </li>
+		    	</ul>
+		    </div>
+
+		  
+
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    	<ul class="nav navbar-nav">
+		    		<li><a href="#" class="uppercase nav-tab">Values<span class="sr-only">(current)</span></a></li>
+		        	<li><a href="#" class="uppercase nav-tab">On the Menu</a></li>
+		        	<li><a href="#" class="uppercase nav-tab">Farms</a></li>
+		        	<li><a href="#" class="uppercase nav-tab">Learn</a></li>
+		    	</ul>
+		    	<ul class="nav navbar-nav navbar-right hidden-xs">
+		    		<li class="sign-in">
+		        	<a href="#" class="nav-btn">Sign In</a>
+		        </li>
+			    	<li>
+		        	<a class="btn btn-join uppercase">Join</a>
+		        </li>
+			    </ul>
+		    </div>
+
+		    
+		    
+
+		  </div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="clearfix"></div>
+
+		<div id="home-hero">
+			<img src="images/spr15-paleo-nonalc@2x.jpg">
+			<!-- <div id="hero-header">
+				<h1 class="center"><span class="metroscript">Healthy cooking</span> made easy</h1>
+				<p class="center p-lg">Fresh organic ingredients &amp; delicious recipes delivered weekly.<br>Gluten-Free, Paleo, &amp; Vegetarian options</p>
+			</div> -->
+		</div>
+
+
+		<div id="three-steps" class="section">
+			<div class="container">
+				<div class="row">
+					<div id="step-container" class="col-lg-4 col-md-4"> 
+						<div class="step-number"><h1>1</h1></div>
+						<div class="step-name">You pick the meals you love, with Gluten-Free, Paleo and Vegetarian options</div>
+					</div>
+					<div id="step-container" class="col-lg-4 col-md-4">
+						<div class="step-number"><h1>2</h1></div>
+						<div class="step-name">We deliver pre-measured organic ingredients and easy recipes to your door</div>
+					</div>
+					<div id="step-container" class="col-lg-4 col-md-4">
+						<div class="step-number"><h1>3</h1></div>
+						<div class="step-name">You cook delicious meals created by our award-winning San Francisco chef</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<div id="basket-types" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="text-center">Choose the <span class="metroscript">best </span> Sun Basket for you</h2>
+						<p class="p-lg text-center">Or customize at any time based on our weekly menu</p>
+						<button class="btn btn-primary btn-lg block center">This week's menu</button>
+					</div>
+					
+					
+				
+					<div id="basket-selector" class="col-lg-12 hidden-xs">
+						<ul class="nav nav-tabs">
+						  <li role="presentation" class="active"><a href="#" class="yellow"><h4>Chef's Basket</h4></a></li>
+						  <li role="presentation"><a href="#" class="blue"><h4>Vegetarian</h4></a></li>
+						  <li role="presentation"><a href="#" class="pink"><h4>Paleo</h4></a></li>
+						  <li role="presentation"><a href="#" class="yellow"><h4>Gluten Free</h4></a></li>
+						</ul>
+					</div>
+					<!-- Dropdown instead of tabs -->
+					<div id="basket-selector" class="btn-group visible-xs col-xs-12">
+					  <button type="button" class="btn btn-default btn-lg dropdown-toggle btn-block" data-toggle="dropdown" aria-expanded="false">
+					    Chef's Basket <span class="caret"></span>
+					  </button>
+					  <ul class="dropdown-menu" role="menu">
+					    <li><a href="#">Vegetarian</a></li>
+					    <li><a href="#">Paleo</a></li>
+					    <li><a href="#">Gluten Free</a></li>
+					  </ul>
+					</div>
+
+					
+					<div id="recipes-container" class="clearfix">
+						<div class="col-lg-4 col-md-4">
+							<div class="recipe-tile">
+								<img src="images/1eae0326-ab4b-4f2f-891d-eb74bf24785c.jpg">
+								<div class="recipe-title"><p>Moroccan grilled chicken with cucumber salad</p></div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="recipe-tile">
+								<img src="images/9ef5ca92-57dd-4164-8c5a-c203c0962257.jpg">
+								<div class="recipe-title recipe-title2"><p>Steak salad with charred scallions and kimchi-spiced dressing</p></div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4">
+							<div class="recipe-tile">
+								<img src="images/842c7e12-36ef-49e7-b1d5-7d77d32a5dda.jpg">
+								<div class="recipe-title"><p>Creamy mushroom risotto with sweet peas</p></div>
+							</div>
+						</div>
+					</div> 
+				</div>	
+			</div>
+		</div>
+
+		<!-- <div id="farms-and-values" class="section">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-lg-12">
+ 						<h2 class="text-center">From the <span class="metroscript">best farms</span> to your table</h2>
+ 					</div>
+ 					<p class="p-lg text-center">Meet our featured farmers this is a subheader about farmers that we work with</p>
+ 					<div class="farmer-container">
+	 					<div id="farm-info" class="col-lg-4 col-md-4">
+	 						<h3>Full Belly Farms, Capay Valley, California</h3>
+	 						<h5>Sustainable Organic Produce</h5>
+	 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing metus  elit. Cras sollicitudin metus  auctor, non ornare metus pretium. Mauris non tempus tortor, sed interdum augue. </p>
+	 					</div>
+	 					<div class="col-lg-8 col-md-8">
+	 						<img src="images/farm1-land.gif">
+	 					</div>
+	 				</div>		
+ 				</div>
+ 			</div>
+		</div> -->
+
+		<script type="text/javascript" src="scripts/home.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(window).scroll(function() {    
+	    	var scroll = $(window).scrollTop();
+		    if (scroll >= 100) {
+		      $("#nav-signed-out").addClass("nav-shadow");
+		  	}	
+		  	else {
+        $("#nav-signed-out").removeClass("nav-shadow");
+    }
+			}); 
+			
+		</script>
+
+	</body>
+</html>

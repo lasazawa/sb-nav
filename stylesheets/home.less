@@ -1,0 +1,84 @@
+
+
+#home-hero {
+	margin-top: 50px;
+	@media @xs-screen {
+		margin-top:0;
+	}
+	#hero-header {
+		position: absolute;
+		width: 100%;
+		margin: 0 auto;
+		top:30%;
+	}
+	img {
+		width: 100%;
+
+		@media @xs-screen {
+			width: 118%;
+			margin-left: -7%;
+		}
+	}	
+}
+
+#step-container {
+	display:table;
+
+	.step-name {
+		.pad-left-10;
+		width: auto;
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.step-number {
+		vertical-align: middle;
+		display: table-cell;
+  	width: 18px;
+  	text-align: center;
+  	font-size: 1.2em;
+  	border-bottom: 5px solid @brand-yellow-light;
+  	h1 {
+  		color: @brand-yellow;
+  	}
+	}
+	@media @xs-screen @sm-screen {
+		margin-bottom: 15px;
+	}
+}
+
+#basket-selector {
+	margin-top:30px;
+}
+
+#basket-types {
+	.bg-white;
+	.recipe-tile {
+		.space-top-15;
+		.border-radius(@topleft:4px, @topright:4px);
+		overflow: hidden;
+		img {max-width: 100%; max-height: 100%;}
+	}
+	.recipe-title {
+		padding:7px 15px;
+		border-bottom:solid 1px @cream-darker;
+		border-right:solid 1px @cream-darker;
+		border-left:solid 1px @cream-darker;
+		.border-radius(@bottomleft:4px, @bottomright:4px);
+	}
+	.nav-tabs {
+		margin-top: 15px;
+		a {padding: 10px 30px;}
+	}
+}
+
+#farms-and-values {
+	.farmer-container {
+		.space-top-15;
+		#farm-info {
+			.pad-15;
+			.bg-white;
+			.border-radius(@topleft:4px, @bottomleft:4px);
+		}
+		img {max-width: 100%; max-height: 100%;}
+	}
+}

@@ -1,0 +1,103 @@
+nav {display: block;}
+.nav-shadow {
+	box-shadow: 0px 1px 5px @gray-medium;
+}
+.navbar {
+	/*  STICKY NAV  */
+	@media @lg-screen, @md-screen, @sm-screen {
+		&#nav-signed-out {
+			position: fixed;
+			width: 100%;
+			z-index: 100;
+			top:0;
+			border-radius: 0;
+			border:none;
+		}
+	}
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  margin-bottom: 0;
+
+  .navbar-collapse {
+		padding-right: 15px;
+  	padding-left: 15px;
+  	border-color: @cream-darker;
+	}
+	
+	.navbar-nav {
+		&#mobile-nav {
+			padding-top: 2px; padding-bottom: 2px; margin-top: 0; margin-bottom: 0; 
+			border-bottom:solid 1px @cream-darker;
+			.divider {
+			  height: 1px;
+			  margin: 2px 0;
+			  overflow: hidden;
+			  background-color: @cream-dark;
+			}
+		}
+		.user-nav-item {.pad-left-30;}
+		li {
+			a, a:visited {font-size: 14px; color:@brand-brown;}
+			a:hover, a:active {background-color: @brand-yellow-light;}
+			a.nav-tab, a.nav-tab:visited {padding:15px 5px 10px; margin: 0 7px; border-bottom: solid 5px white;}
+			a.nav-tab:hover, a.nav-tab:active {border-bottom:solid 5px @brand-yellow;}
+			a.nav-btn, a.nav-btn:visited {border-radius:3px; padding:7px 10px; margin-right: 5px; margin-top:5px; background-color: white; border:solid 1px white; border-bottom:2px solid white;}
+			a.nav-btn:hover, a.nav-btn:active {border:solid 1px @brand-yellow; color: @brand-yellow-dark; border-bottom: 2px solid @brand-yellow;}
+		}
+		.dropdown-menu, .sign-in {
+			a {text-transform: capitalize;}
+		}	
+		.btn-join {
+		  background-color: white;
+		  border: solid 1px @brand-blue-dark;
+		  border-bottom: solid 2px @brand-blue-dark;
+		  color: @brand-blue-dark;
+		  padding: 7px 30px;
+		  .brand-font-bold;
+		  margin-top: 5px;
+
+		  @media @xs-screen {
+		  	padding: 7px 10px;
+		  }
+		}
+		.btn-join:hover {
+		  background-color: @brand-blue;
+		  border:solid 1px @brand-blue;
+		  border-bottom: solid 2px @brand-blue;
+		  color: white;
+		}
+		.btn-join:active {
+			background-color: @brand-blue-dark;
+			border:@brand-blue-dark;
+		  border-bottom: solid 2px @brand-blue-dark;
+		}
+	}
+	.navbar-header {
+		.navbar-toggle, &:visited {
+			border-color: @brand-yellow-light; .bg-white;
+			.icon-bar {background-color: @brand-yellow;}
+			&:hover, &:active {
+				background-color: @brand-yellow-lighter; border-color: @brand-yellow-dark;
+				.icon-bar{background-color: @brand-yellow-dark;}
+			}
+		}
+		.navbar-brand {
+			padding:6px 15px;
+			img {width: 180px;}
+			.logo-container.signed-out {
+				@media @xs-screen {
+					overflow: hidden;
+					img {
+						width: 140px;
+						/*margin-left: -32px;*/
+						margin-top: 4px;
+					}
+				}
+			}
+		} /*end navbar-brand*/
+	}
+
+}
+
